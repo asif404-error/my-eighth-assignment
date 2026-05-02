@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "title": "The Silent Listener",
+    "author": "Ava Reed",
+    "description": "A gripping story about a young woman who discovers she can hear the thoughts of those around her, leading her into a web of secrets and betrayal.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/id/8739161-L.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Cosmos Reimagined",
+    "author": "Carl Sagan Jr.",
+    "description": "A breathtaking exploration of the universe, from the smallest particles to the largest galaxies, redefining our understanding of existence.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/id/8739162-L.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Learn Python in 30 Days",
+    "author": "James Carter",
+    "description": "A beginner-friendly guide to mastering Python programming with real-world projects and hands-on exercises.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/id/8739163-L.jpg"
+  },
+  {
+    "id": "4",
+    "title": "The Last Garden",
+    "author": "Sophie Lane",
+    "description": "A heartwarming tale of friendship, loss, and renewal set in a magical garden that holds the secrets of an entire town.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/id/8739164-L.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Quantum Mechanics Simplified",
+    "author": "Dr. Alan Brooks",
+    "description": "A clear and accessible introduction to quantum mechanics, breaking down complex theories into easy-to-understand concepts.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/id/8739165-L.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Mastering React",
+    "author": "Emily Chen",
+    "description": "A comprehensive guide to building modern web applications with React, covering hooks, state management, and advanced patterns.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/id/8739166-L.jpg"
+  },
+  {
+    "id": "7",
+    "title": "Whispers in the Dark",
+    "author": "Nathan Cole",
+    "description": "A thrilling mystery novel following a detective who must solve a series of crimes connected by an ancient secret society.",
+    "category": "Story",
+    "available_quantity": 2,
+    "image_url": "https://covers.openlibrary.org/b/id/8739167-L.jpg"
+  },
+  {
+    "id": "8",
+    "title": "The DNA Blueprint",
+    "author": "Dr. Sarah Miles",
+    "description": "An eye-opening journey through the science of genetics, exploring how DNA shapes life and the future of genetic engineering.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/id/8739168-L.jpg"
+  },
+  {
+    "id": "9",
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Mitchell",
+    "description": "A focused guide to the most powerful and elegant features of JavaScript, helping developers write cleaner and more efficient code.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/id/8739169-L.jpg"
+  },
+  {
+    "id": "10",
+    "title": "Beyond the Horizon",
+    "author": "Lila Monroe",
+    "description": "An epic adventure story of a young explorer who embarks on a journey across uncharted lands in search of a lost civilization.",
+    "category": "Story",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/id/8739170-L.jpg"
+  },
+  {
+    "id": "11",
+    "title": "The Black Hole Theory",
+    "author": "Prof. Henry Nash",
+    "description": "A fascinating deep dive into the mysteries of black holes, exploring their formation, behavior, and impact on the fabric of spacetime.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/id/8739171-L.jpg"
+  },
+  {
+    "id": "12",
+    "title": "Next.js Full Stack",
+    "author": "Rachel Wong",
+    "description": "A practical guide to building full-stack web applications with Next.js, covering routing, API routes, authentication, and deployment.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://covers.openlibrary.org/b/id/8739172-L.jpg"
+  }
+]
+
+// image imported from the direct link: openlibrary.org
