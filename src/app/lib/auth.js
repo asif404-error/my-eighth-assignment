@@ -8,6 +8,10 @@ const db = client.db();
 
 export const auth = betterAuth({
   database: mongodbAdapter(db),
+  trustedOrigins: [
+    "http://localhost:3000",
+    "https://my-eighth-assignment-9gtf.vercel.app/",
+  ],
   emailAndPassword: {
     enabled: true,
   },
