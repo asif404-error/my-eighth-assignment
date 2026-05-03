@@ -3,11 +3,20 @@ import Link from "next/link";
 import { FaBookOpen } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
+import { authClient } from "@/app/lib/auth-client";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
-  // Beter-Auth Section needs to be here. Auth Section is coming......
-  const user = null;
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const { data: session } = authClient.useSession();
+  const user = session?.user;
+
+  const handleLogout = async () => {
+    await authClient.signOut();
+    router.push("/");
+  };
 
   return (
     <div className="navbar bg-[#0F172A] text-white sticky top-0 z-50 shadow-lg px-4">
@@ -51,10 +60,28 @@ export default function Navbar() {
       <div className="navbar-end gap-3">
         {user ? (
           <>
+            <div className="tooltip tooltip-bottom" data-tip={user.name}>
+              <div className="avatar hidden lg:block">
+                <div className="w-9 rounded-full ring ring-[#F59E0B] ring-offset-2 ring-offset-[#0F172A]">
+                  <Image
+                    src={
+                      user.image ||
+                      `https://ui-avatars.com/api/?name=${user.name}&background=F59E0B&color=0F172A`
+                    }
+                    width={36}
+                    height={36}
+                    alt={user.name}
+                  />
+                </div>
+              </div>
+            </div>
             <span className="text-sm font-medium text-[#F59E0B] hidden lg:block">
               {user.name}
             </span>
-            <button className="btn btn-sm bg-[#0F766E] hover:bg-[#0d6460] text-white border-none">
+            <button
+              onClick={handleLogout}
+              className="btn btn-sm bg-[#0F766E] hover:bg-[#0d6460] text-white border-none"
+            >
               Logout
             </button>
           </>
@@ -90,6 +117,18 @@ export default function Navbar() {
                   My Profile
                 </Link>
               </li>
+              {user && (
+                <li>
+                  <button
+                    onClick={() => {
+                      handleLogout();
+                      setMenuOpen(false);
+                    }}
+                  >
+                    Logout
+                  </button>
+                </li>
+              )}
             </ul>
           )}
         </div>
